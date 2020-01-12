@@ -74,7 +74,7 @@ class AboutCell: UITableViewCell {
         
         aboutUserAttributedString.append(NSAttributedString(string: " Show Less", attributes: [NSMutableAttributedString.Key.font: UIFont(name: "OpenSans", size: 13)!,NSMutableAttributedString.Key.foregroundColor: UIColor.blue]))
             
-                aboutUserAttributedString.addAttribute(.link, value: "google.com", range: NSRange(location: aboutUserAttributedString.length - 10, length: 10))
+                aboutUserAttributedString.addAttribute(.link, value: "google2.com", range: NSRange(location: aboutUserAttributedString.length - 10, length: 10))
             
         aboutUserTextView.attributedText = aboutUserAttributedString
         
