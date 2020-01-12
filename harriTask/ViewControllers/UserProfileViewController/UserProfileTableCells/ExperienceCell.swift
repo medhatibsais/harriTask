@@ -76,9 +76,17 @@ class ExperienceCell: UITableViewCell {
 
         if isFirstCell {
             self.infoView.roundCorners(corners: [.topLeft,.topRight], radius: 5)
+            
+//            self.infoView.layer.cornerRadius = 50
+//            self.infoView.clipsToBounds = true
+//            self.infoView.layer.maskedCorners = [.layerMaxXMinYCorner,.layerMinXMinYCorner]
+            
         }
         if isLastCell {
             self.infoView.roundCorners(corners: [.bottomLeft,.bottomRight], radius: 5)
+//            self.infoView.layer.cornerRadius = 5
+//            self.infoView.clipsToBounds = true
+//            self.infoView.layer.maskedCorners = [.layerMinXMaxYCorner,.layerMaxXMaxYCorner]
         }
     }
     

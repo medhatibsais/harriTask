@@ -219,6 +219,79 @@
 			path = ProfileTableViewModel;
 			sourceTree = "<group>";
 		};
+		142C9AE623C7714200CA1EF7 /* UsersTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				25C19A9323547520004F819F /* UserCell.swift */,
+			);
+			path = UsersTableCell;
+			sourceTree = "<group>";
+		};
+		142C9AE723C7717A00CA1EF7 /* UserProfileTableCells */ = {
+			isa = PBXGroup;
+			children = (
+				14E83AC023B259010065A7CC /* ProfileImageCell.swift */,
+				14E83ACC23B4B50E0065A7CC /* AboutCell.swift */,
+				14E83AD223B4DE880065A7CC /* ExperienceCell.swift */,
+				14E83ADE23B893A10065A7CC /* SkillsCell.swift */,
+				14E83AE023B899240065A7CC /* CheckSkillsCollectionCell.swift */,
+			);
+			path = UserProfileTableCells;
+			sourceTree = "<group>";
+		};
+		142C9AE823C771AF00CA1EF7 /* UsersTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				25C19A902354749F004F819F /* UsersTableViewController.swift */,
+				142C9AE623C7714200CA1EF7 /* UsersTableCell */,
+				142C9AEA23C7728F00CA1EF7 /* UsersTableModel */,
+				142C9AE423C5EC1100CA1EF7 /* UsersTableViewModel */,
+				142C9AE123C5EB2C00CA1EF7 /* UsersTable+Delegate+DataSource */,
+			);
+			path = UsersTableViewController;
+			sourceTree = "<group>";
+		};
+		142C9AE923C771E000CA1EF7 /* UserProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				14E83AAA23B2293E0065A7CC /* UserProfileViewController.swift */,
+				142C9AE723C7717A00CA1EF7 /* UserProfileTableCells */,
+				142C9AEC23C7738800CA1EF7 /* UserProfileModel */,
+				142C9AE523C5EC3C00CA1EF7 /* ProfileTableViewModel */,
+				142C9AE223C5EB5900CA1EF7 /* ProfileTable+Delegate+DataSource */,
+				142C9AE323C5EBC400CA1EF7 /* ProfileTableCollectionView+Delegate+DataSource */,
+			);
+			path = UserProfileViewController;
+			sourceTree = "<group>";
+		};
+		142C9AEA23C7728F00CA1EF7 /* UsersTableModel */ = {
+			isa = PBXGroup;
+			children = (
+				14E83AA423AA58310065A7CC /* UserSearchDataResponse.swift */,
+				14E83AA623AA58490065A7CC /* UserSearchWholeResultData.swift */,
+				14E83A9B23A91FAA0065A7CC /* User.swift */,
+				14E83A9D23A920440065A7CC /* Position.swift */,
+				14E83A9F23AA0B0F0065A7CC /* Location.swift */,
+			);
+			path = UsersTableModel;
+			sourceTree = "<group>";
+		};
+		142C9AEC23C7738800CA1EF7 /* UserProfileModel */ = {
+			isa = PBXGroup;
+			children = (
+				14E83AAC23B22ECB0065A7CC /* UserProfileData.swift */,
+				14E83AAE23B22F710065A7CC /* UserProfileContent.swift */,
+				14E83AB023B22F9D0065A7CC /* Availability.swift */,
+				14E83AB223B2312A0065A7CC /* UserProfileEducation.swift */,
+				14E83AB423B234490065A7CC /* UserProfileExperience.swift */,
+				14E83AB623B237600065A7CC /* UserProfileInfo.swift */,
+				14E83AB823B238D00065A7CC /* UserProfileLocation.swift */,
+				14E83ABA23B23A230065A7CC /* UserProfileBio.swift */,
+				14E83ABC23B23A660065A7CC /* UserSkill.swift */,
+			);
+			path = UserProfileModel;
+			sourceTree = "<group>";
+		};
 		1477834F2396961700C752D3 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,7 +372,6 @@
 				25C19A7523546821004F819F /* SceneDelegate.swift */,
 				25C19A952354759F004F819F /* Designables */,
 				25C19A8F23547488004F819F /* ViewControllers */,
-				25C19A8723546AEC004F819F /* Model */,
 				14E83A6123A782A30065A7CC /* Representables */,
 				25C19A92235474EC004F819F /* Views */,
 				25C19A8A23546B0A004F819F /* Utilities */,
@@ -311,27 +383,6 @@
 				25C19A8123546825004F819F /* Info.plist */,
 			);
 			path = harriTask;
-			sourceTree = "<group>";
-		};
-		25C19A8723546AEC004F819F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				14E83AA423AA58310065A7CC /* UserSearchDataResponse.swift */,
-				14E83AA623AA58490065A7CC /* UserSearchWholeResultData.swift */,
-				14E83A9B23A91FAA0065A7CC /* User.swift */,
-				14E83A9D23A920440065A7CC /* Position.swift */,
-				14E83A9F23AA0B0F0065A7CC /* Location.swift */,
-				14E83AAC23B22ECB0065A7CC /* UserProfileData.swift */,
-				14E83AAE23B22F710065A7CC /* UserProfileContent.swift */,
-				14E83AB023B22F9D0065A7CC /* Availability.swift */,
-				14E83AB223B2312A0065A7CC /* UserProfileEducation.swift */,
-				14E83AB423B234490065A7CC /* UserProfileExperience.swift */,
-				14E83AB623B237600065A7CC /* UserProfileInfo.swift */,
-				14E83AB823B238D00065A7CC /* UserProfileLocation.swift */,
-				14E83ABA23B23A230065A7CC /* UserProfileBio.swift */,
-				14E83ABC23B23A660065A7CC /* UserSkill.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		25C19A8A23546B0A004F819F /* Utilities */ = {
@@ -347,13 +398,8 @@
 		25C19A8F23547488004F819F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				25C19A902354749F004F819F /* UsersTableViewController.swift */,
-				142C9AE123C5EB2C00CA1EF7 /* UsersTable+Delegate+DataSource */,
-				142C9AE423C5EC1100CA1EF7 /* UsersTableViewModel */,
-				14E83AAA23B2293E0065A7CC /* UserProfileViewController.swift */,
-				142C9AE223C5EB5900CA1EF7 /* ProfileTable+Delegate+DataSource */,
-				142C9AE323C5EBC400CA1EF7 /* ProfileTableCollectionView+Delegate+DataSource */,
-				142C9AE523C5EC3C00CA1EF7 /* ProfileTableViewModel */,
+				142C9AE823C771AF00CA1EF7 /* UsersTableViewController */,
+				142C9AE923C771E000CA1EF7 /* UserProfileViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -361,16 +407,10 @@
 		25C19A92235474EC004F819F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				25C19A9323547520004F819F /* UserCell.swift */,
 				14E83A9723A8D4EB0065A7CC /* UsersTableFooterView.swift */,
 				14E83A9523A8D1460065A7CC /* LoadingFooterView.xib */,
-				14E83AC023B259010065A7CC /* ProfileImageCell.swift */,
-				14E83ACC23B4B50E0065A7CC /* AboutCell.swift */,
-				14E83AD223B4DE880065A7CC /* ExperienceCell.swift */,
 				14E83ADC23B87D4D0065A7CC /* CheckListView.swift */,
 				14E83ADA23B87AC80065A7CC /* checkListView.xib */,
-				14E83ADE23B893A10065A7CC /* SkillsCell.swift */,
-				14E83AE023B899240065A7CC /* CheckSkillsCollectionCell.swift */,
 				14E83AE623B8AA060065A7CC /* DynamicHeightCollectionView.swift */,
 				14E83AE823B8CB770065A7CC /* CollectionViewFlowLayout.swift */,
 				142C9ADD23C205A300CA1EF7 /* AnimatedTitleView.swift */,
